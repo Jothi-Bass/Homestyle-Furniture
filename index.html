@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HomeStyle Furniture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>HomeStyle Furniture</h1>
+  <p>Comfort • Quality • Style</p>
+</header>
+
+<section class="products">
+
+  <div class="product">
+    <img src="C:/Prgms/Study%20Material/Digital%20Marketting/Bed.jpg" alt="Bed">
+    <h3>King Size Bed</h3>
+    <p>₹40,000</p>
+    <input type="number" min="1" value="1" id="bedQty">
+    <button onclick="addToCart('King Size Bed',40000,'bedQty')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:/Prgms/Study%20Material/Digital%20Marketting/Chair.webp" alt="Chair">
+    <h3>Wooden Chair</h3>
+    <p>₹5,000</p>
+    <input type="number" min="1" value="1" id="chairQty">
+    <button onclick="addToCart('Wooden Chair',5000,'chairQty')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:/Prgms/Study%20Material/Digital%20Marketting/Sofa.jpg" alt="Sofa">
+    <h3>Luxury Sofa</h3>
+    <p>₹25,000</p>
+    <input type="number" min="1" value="1" id="sofaQty">
+    <button onclick="addToCart('Luxury Sofa',25000,'sofaQty')">Add to Cart</button>
+  </div>
+
+</section>
+
+<section class="cart">
+  <h2>🛒 Cart</h2>
+  <ul id="cartItems"></ul>
+  <h3>Total: ₹<span id="total">0</span></h3>
+  <button onclick="placeOrder()">Place Order</button>
+</section>
+<!-- Shop Details (Uniform Design) -->
+<section class="shop-details">
+  <div class="container">
+
+    <h2 class="section-title">Store Information</h2>
+
+    <div class="info-cards">
+
+      <div class="info-card">
+        <h3>Our Store</h3>
+        <p><strong>HomeStyle Furniture</strong></p>
+        <p>No. 24, MG Road</p>
+        <p>Near City Bus Stand</p>
+        <p>Coimbatore – 641001</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Contact</h3>
+        <p>Phone: +91 84281 00403</p>
+        <p>Alternate: +91 98765 43210</p>
+        <p>Email: homestylefurniture@gmail.com</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Working Hours</h3>
+        <p>Mon – Sat: 9:30 AM – 8:30 PM</p>
+        <p>Sunday: 10:00 AM – 6:00 PM</p>
+      </div>
+
+      <div class="info-card highlight-card">
+        <h3>Services</h3>
+        <p>Free Home Delivery</p>
+        <p>Custom Furniture Orders</p>
+        <p>1-Year Warranty</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<footer class="main-footer">
+  <p>© 2026 HomeStyle Furniture. All Rights Reserved.</p>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
